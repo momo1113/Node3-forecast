@@ -4,17 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node src/app.js"
-   
+    "start":"node scr/app.js"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    
+
     "express": "^4.16.4",
     "hbs": "^4.0.5",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
 
   }
 }
