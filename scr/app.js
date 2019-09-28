@@ -50,7 +50,7 @@ app.get('',(req,res) =>{
 //use about.hbs page
 app.get('/about',(req,res)=>{
     res.render('about', {
-      title: 'About Me',
+      title: 'About',
       name:'Momo Sun'
 
     })
