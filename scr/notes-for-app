@@ -1,0 +1,61 @@
+core moudle from node.js we don't have install
+however the nap module we do need install
+
+
+app.use it's a way to customize the server
+static is take the path which we want to serve up
+
+app.get method takes url(route), and a function
+function takes two argument request from user and response 
+
+ send some property(object - json file)
+     //[] means array notation
+     //{} means object notation
+     //{} can be inside [] means arrays holds lots of objects
+
+the core module path.joint will point to the main website page
+
+
+template engine
+handle bar can allow us to render dynamic documents; easy to create code that we can reuse
+npm has module handle bar(hbs- use the handle bar behind the seen)
+
+when install npm package which will always has to install in the right package
+
+use app.set('view engine','hbs') to set the handle bar
+the set method takes two argument, one is the search key  which is a string another is the module name
+
+use render will allows us to render a view and render a handle bar template
+
+if we want to inject a file in hbs file we need use {{}} to inject the file
+
+view the directory folder is what node.js looking for, if we name the folder some other name 
+the website will not work at all
+
+
+
+
+
+//Define paths for Express config
+const viewsPath = path.join(__dirname,'../templates')
+
+
+//Setup handlebars engine and views location
+app.set('view engine','hbs')
+
+
+
+
+//Setup static directory to serve
+app.use(express.static(publicDirectoryPath))
+
+
+if we see error as Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+which means we send two request back to server
+
+nodemon scr/app.js -e js,hbs command is for avoiding to restart nodemon everytime
+
+then is a call back function
+
+git is for the version control
+use heroku to deploy the website
