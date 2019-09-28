@@ -41,7 +41,9 @@ header a{
 
 
 .portrait{
-        width: 250px;
+        display: block;
+        margin-top: 3px;
+        width: 450px;
 }
 
 input{
