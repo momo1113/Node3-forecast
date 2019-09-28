@@ -59,3 +59,39 @@ then is a call back function
 
 git is for the version control
 use heroku to deploy the website
+
+
+command for the ssh key
+ls -a -l ~/.ssh  
+
+command for create a ssh key
+ ssh-keygen -t rsa -b 4096 -C "mosun1113@gmail.com"
+
+ 
+command to start the ssh agent
+ eval "$(ssh-agent -s)"
+
+ register the file
+ssh-add -K ~/.ssh/id_rsa
+
+open the ssh key
+cat ~/.ssh/id_rsa.pub
+
+test if the we connect to the github server
+ ssh -T git@github.com
+
+ command for login heroku
+ heroku login
+
+command find the keys in the local computer
+ heroku keys:add
+
+ command for create a project on heroku
+ sun-forecast-application
+
+command for running a script, start is the script name inside the package.json file
+ npm run start
+
+
+ env is an object where we can access the enviornment variable
+const port = process.env 

@@ -8,6 +8,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express()
+const port = process.env.PORT  || 3000
 
 
 //path.join will always point the root page
@@ -123,8 +124,8 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000, () =>{
-    console.log('Server is up on port 3000.')
+app.listen(port, () =>{
+    console.log('Server is up on port' + port)
 })
 //app.com
 //app.com/help
