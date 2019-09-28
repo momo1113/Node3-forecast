@@ -1,4 +1,4 @@
-console.log('client side javasript file is loaded')
+
 
 //fetch is not from javascript
 const weatherForm = document.querySelector('form')
